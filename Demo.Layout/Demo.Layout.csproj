@@ -9,16 +9,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="calendar.png" />
+    <None Remove="customer.png" />
     <None Remove="gear.png" />
     <None Remove="logo.png" />
     <None Remove="menu.png" />
+    <None Remove="people.png" />
+    <None Remove="stats.png" />
     <None Remove="uac_logo.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="calendar.png" />
+    <Resource Include="customer.png" />
     <Resource Include="gear.png" />
     <Resource Include="logo.png" />
     <Resource Include="menu.png" />
+    <Resource Include="people.png" />
+    <Resource Include="stats.png" />
     <Resource Include="uac_logo.png" />
   </ItemGroup>
 

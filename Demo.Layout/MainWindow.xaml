@@ -19,6 +19,7 @@
 
         </Style>
     </Window.Resources>
+
     <DockPanel>
         <Grid DockPanel.Dock="Left"  Background="#FF343A3F">
             <Grid.RowDefinitions>
@@ -57,14 +58,163 @@
             </Grid.ColumnDefinitions>
             <TextBlock></TextBlock>
             <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right"
-                       Grid.Column="1" Text="John Oliver"></TextBlock>
+                       Grid.Column="1" Text="Jomarie Callueng"></TextBlock>
             <TextBlock Grid.Column="2"></TextBlock>
             <Image Margin="5" Source="/menu.png"   ></Image>
             <Image Margin="8" Grid.Column="2" Source="/gear.png" ></Image>
 
         </Grid>
         <Grid>
-        
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Label Content="Statistic 2026-2027" Margin="36,4,0,0" FontWeight="Bold"></Label>
+            <Image Source="/stats.png" HorizontalAlignment="Left" Width="30"></Image>
+            <Label Grid.Column="1" Content="Last 3 Days Application" Margin="36,4,0,0" FontWeight="Bold"></Label>
+            <Image Source="/calendar.png"  HorizontalAlignment="Left" Grid.Column="1" Width="30"></Image>
+            <Label Grid.Column="2" Content="For Your Interview" Margin="36,4,0,0" FontWeight="Bold"></Label>
+            <Image Source="/customer.png"  HorizontalAlignment="Left"  Grid.Column="2"  Width="30" ></Image>
+
+
+            <Border Name="mask1" Background="White" Grid.Row="1" CornerRadius="6,6,6,6" Opacity="1" />
+            <StackPanel Grid.Row="1" Background="White">
+                <StackPanel.OpacityMask>
+                    <VisualBrush Visual="{Binding ElementName=mask1}"></VisualBrush>
+                </StackPanel.OpacityMask>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" Opacity="50"></DropShadowEffect>
+                </StackPanel.Effect>
+                <TextBlock Text="119" FontWeight="Bold"></TextBlock>
+                <TextBlock Text="Jomarie" FontWeight="Bold" ></TextBlock>
+            </StackPanel>
+
+            <Border Name="mask2" Background="#FFFFFF" Grid.Row="2" CornerRadius="6,6,6,6" Opacity="1" />
+            <StackPanel Grid.Row="2"  Background="White">
+                <StackPanel.OpacityMask>
+                    <VisualBrush Visual="{Binding ElementName=mask2}"></VisualBrush>
+                </StackPanel.OpacityMask>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" Opacity="50"></DropShadowEffect>
+                </StackPanel.Effect>
+                <TextBlock Text="10" FontWeight="Bold"></TextBlock>
+                <TextBlock Text="New Applications" FontWeight="Bold"></TextBlock>
+            </StackPanel>
+
+
+            <Border Name="mask3" Background="#FFFFFF" Grid.Row="3" CornerRadius="6,6,6,6" Opacity="1" />
+            <StackPanel Grid.Row="3"  Background="White">
+                <StackPanel.OpacityMask>
+                    <VisualBrush Visual="{Binding ElementName=mask3}"></VisualBrush>
+                </StackPanel.OpacityMask>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" Opacity="50"></DropShadowEffect>
+                </StackPanel.Effect>
+                <TextBlock Text="20" FontWeight="Bold"></TextBlock>
+                <TextBlock Text="Completed Requirements" FontWeight="Bold"></TextBlock>
+            </StackPanel>
+
+
+            <Border Name="mask4" Background="#FFFFFF" Grid.Row="4" CornerRadius="6,6,6,6" Opacity="1" />
+            <StackPanel Grid.Row="4"  Background="White">
+                <StackPanel.OpacityMask>
+                    <VisualBrush Visual="{Binding ElementName=mask4}"></VisualBrush>
+                </StackPanel.OpacityMask>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" Opacity="50"></DropShadowEffect>
+                </StackPanel.Effect>
+                <TextBlock Text="5" FontWeight="Bold"></TextBlock>
+                <TextBlock Text="Applicants Scheduled Today" FontWeight="Bold"></TextBlock>
+            </StackPanel>
+
+            <Border Name="mask5" Background="#FFFFFF" Grid.Row="1" Grid.Column="1" CornerRadius="6,6,6,6" Opacity="1" />
+            <StackPanel Grid.Row="1" Grid.Column="1"  Background="White">
+                <StackPanel.OpacityMask>
+                    <VisualBrush Visual="{Binding ElementName=mask5}"></VisualBrush>
+                </StackPanel.OpacityMask>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" Opacity="50"></DropShadowEffect>
+                </StackPanel.Effect>
+                <TextBlock Text="0" FontWeight="Bold"></TextBlock>
+                <TextBlock Text="No Show" FontWeight="Bold"></TextBlock>
+            </StackPanel>
+
+
+            <Border Name="mask6" Background="#FFFFFF" Grid.Row="5"  CornerRadius="6,6,6,6" Opacity="1" />
+            <StackPanel Grid.Row="5"  Background="White">
+                <StackPanel.OpacityMask>
+                    <VisualBrush Visual="{Binding ElementName=mask6}"></VisualBrush>
+                </StackPanel.OpacityMask>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" Opacity="50"></DropShadowEffect>
+                </StackPanel.Effect>
+                <TextBlock Text="1" FontWeight="Bold"></TextBlock>
+                <TextBlock Text="Preparatory Department" FontWeight="Bold"></TextBlock>
+            </StackPanel>
+
+            <Border Name="mask" Background="#FFFFFF" Grid.Row="2" Grid.Column="1" CornerRadius="6,6,6,6" Opacity="1" />
+            <StackPanel Grid.Row="2" Grid.Column="1" Background="White">
+                <StackPanel.OpacityMask>
+                    <VisualBrush Visual="{Binding ElementName=mask}"></VisualBrush>
+                </StackPanel.OpacityMask>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" Opacity="50"></DropShadowEffect>
+                </StackPanel.Effect>
+                <TextBlock Text="1" FontWeight="Bold"></TextBlock>
+                <TextBlock Text="Basic Education" FontWeight="Bold"></TextBlock>
+            </StackPanel>
+
+
+            <Border Name="mask7" Background="#FFFFFF" Grid.Row="3" Grid.Column="1" CornerRadius="6,6,6,6" Opacity="1" />
+            <StackPanel Grid.Row="3" Grid.Column="1"  Background="White">
+                <StackPanel.OpacityMask>
+                    <VisualBrush Visual="{Binding ElementName=mask2}"></VisualBrush>
+                </StackPanel.OpacityMask>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" Opacity="50"></DropShadowEffect>
+                </StackPanel.Effect>
+                <TextBlock Text="15" FontWeight="Bold"></TextBlock>
+                <TextBlock Text="Senior High School" FontWeight="Bold"></TextBlock>
+            </StackPanel>
+
+            <Border Name="mask10" Background="#FFFFFF" Grid.Row="4" Grid.Column="1" CornerRadius="6,6,6,6" Opacity="1" />
+            <StackPanel Grid.Row="4" Grid.Column="1"  Background="White">
+                <StackPanel.OpacityMask>
+                    <VisualBrush Visual="{Binding ElementName=mask10}"></VisualBrush>
+                </StackPanel.OpacityMask>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" Opacity="50"></DropShadowEffect>
+                </StackPanel.Effect>
+                <TextBlock Text="10" FontWeight="Bold"></TextBlock>
+                <TextBlock Text="Higher Education" FontWeight="Bold"></TextBlock>
+            </StackPanel>
+
+
+            <Border Name="mask8" Background="#FFFFFF" Grid.Row="1" Grid.Column="2" CornerRadius="6,6,6,6" Opacity="1" />
+            <StackPanel Grid.Row="1" Grid.Column="2"  Background="Red">
+                <StackPanel.OpacityMask>
+                    <VisualBrush Visual="{Binding ElementName=mask8}"></VisualBrush>
+                </StackPanel.OpacityMask>
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Black" Opacity="50"></DropShadowEffect>
+                </StackPanel.Effect>
+                <TextBlock Text="20" Foreground="White"></TextBlock>
+                <TextBlock Text="For Your Interview" Foreground="White"></TextBlock>
+            </StackPanel>
+            <Grid.Background>
+                <ImageBrush ImageSource="/logo.png" Opacity="0.2" Stretch="Uniform" ></ImageBrush>
+            </Grid.Background>
         </Grid>
+        
     </DockPanel>
 </Window>
